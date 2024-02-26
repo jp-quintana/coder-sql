@@ -22,6 +22,13 @@ También se busca que la dirección de los usuarios sea de facil acceso para agi
 
 ### Modelo EER
 
+![eer-model](https://github.com/jp-quintana/coder-sql/assets/87621233/9535b089-7046-4aa0-b30c-a03d8bf043ed)
+
 ### ERD
 
+El diagrama se puede visualizar bajandose el archivo correspondiente y abriendolo en [draw.io](https://app.diagrams.net/).
+
 ## Diagrama Entidad Relación
+
+El diagrama se puede visualizar bajandose el archivo correspondiente y abriendolo en excel.
+
