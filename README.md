@@ -30,7 +30,7 @@ El diagrama se puede visualizar bajandose el archivo correspondiente y abriendol
 ![erd-diagram](https://github.com/jp-quintana/coder-sql/assets/87621233/86fd79b1-b55d-4593-8e0f-d8afb7319884)
 
 
-## Diagrama Entidad Relación
+## Lista de Tablas
 
-El diagrama se puede visualizar bajandose el archivo correspondiente y abriendolo en excel.
+La lista de tablas con sus descripciones se puede visualizar bajandose el archivo correspondiente y abriendolo en excel.
 
