@@ -67,8 +67,8 @@ create table cart_item(
     foreign key (cart_id) references cart(cart_id)
 );
 
-create table `order`(
-	order_id int auto_increment primary key,
+create table purchase(
+	purchase_id int auto_increment primary key,
     city varchar(30) not null,
     country varchar(30) not null,
     zipcode varchar(10) not null,
@@ -80,14 +80,14 @@ create table `order`(
     foreign key (user_id) references user(user_id)
 );
 
-create table order_item(
-	order_item_id int auto_increment primary key,
+create table purchase_item(
+	purchase_item_id int auto_increment primary key,
     quantity int not null check (quantity > 0),
     product_id int not null,
-    order_id int not null,
+    purchase_id int not null,
     created_at timestamp default current_timestamp,
     foreign key (product_id) references product(product_id),
-    foreign key (order_id) references `order`(order_id)
+    foreign key (purchase_id) references purchase(purchase_id)
 );
 
 create table review(
