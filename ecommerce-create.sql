@@ -4,22 +4,22 @@ use ecommerce;
 
 create table user(
 	user_id int auto_increment primary key,
-    first_name varchar(30) not null,
-    last_name varchar(30) not null,
-    email varchar(30) not null,
+    first_name varchar(50) not null,
+    last_name varchar(50) not null,
+    email varchar(50) not null,
     birthdate date not null,
-    password varchar(30) not null,
+    password varchar(50) not null,
     created_at timestamp default current_timestamp
 );
 
 create table address(
 	address_id int auto_increment primary key,
-    city varchar(30) not null,
-    country varchar(30) not null,
-    zipcode varchar(10) not null,
-    state varchar(30) not null,
-    street_name varchar(30) not null,
-    street_number varchar(30) not null,
+    city varchar(50) not null,
+    country varchar(50) not null,
+    zipcode varchar(50) not null,
+    state varchar(50) not null,
+    street_name varchar(50) not null,
+    street_number varchar(50) not null,
     created_at timestamp default current_timestamp
 );
 
@@ -36,7 +36,7 @@ create table user_address(
 
 create table category(
 	category_id int auto_increment primary key,
-	category_name varchar(30) not null,
+	category_name varchar(50) not null,
 	created_at timestamp default current_timestamp
 );
 
@@ -69,12 +69,12 @@ create table cart_item(
 
 create table purchase(
 	purchase_id int auto_increment primary key,
-    city varchar(30) not null,
-    country varchar(30) not null,
-    zipcode varchar(10) not null,
-    state varchar(30) not null,
-    street_name varchar(30) not null,
-    street_number varchar(30) not null,
+    city varchar(50) not null,
+    country varchar(50) not null,
+    zipcode varchar(50) not null,
+    state varchar(50) not null,
+    street_name varchar(50) not null,
+    street_number varchar(50) not null,
     user_id int not null,
     created_at timestamp default current_timestamp,
     foreign key (user_id) references user(user_id)
