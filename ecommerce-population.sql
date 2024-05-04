@@ -1,7 +1,7 @@
 use ecommerce;
 
-INSERT INTO user (first_name, last_name, email, birthdate, password) 
-VALUES 
+insert into user (first_name, last_name, email, birthdate, password) 
+values 
     ('Ana', 'García', 'ana@example.com', '1993-02-15', 'anapassword'),
     ('Diego', 'Rodríguez', 'diego@example.com', '1987-06-20', 'diegopassword'),
     ('Laura', 'Fernández', 'laura@example.com', '1990-09-05', 'laurapassword'),
@@ -23,8 +23,8 @@ VALUES
     ('Tomás', 'Ortiz', 'tomas@example.com', '1987-04-05', 'tomaspassword'),
     ('Catalina', 'Rojas', 'catalina@example.com', '1992-08-28', 'catalinapassword');
     
-INSERT INTO address (city, country, zipcode, state, street_name, street_number) 
-VALUES 
+insert into address (city, country, zipcode, state, street_name, street_number) 
+values 
     ('Buenos Aires', 'Argentina', 'C1064AAB', 'CABA', 'Avenida Corrientes', '1234'),
     ('Córdoba', 'Argentina', 'X5000', 'Córdoba', 'Avenida Vélez Sársfield', '567'),
     ('Rosario', 'Argentina', 'S2000', 'Santa Fe', 'Boulevard Oroño', '890'),
@@ -50,8 +50,8 @@ VALUES
     ('San Carlos de Bariloche', 'Argentina', 'R8400', 'Río Negro', 'Avenida 12 de Octubre', '778'),
     ('Posadas', 'Argentina', 'N3300', 'Misiones', 'Calle Bolívar', '889');
     
-INSERT INTO user_address (user_id, shipping_address_id, billing_address_id) 
-VALUES 
+insert into user_address (user_id, shipping_address_id, billing_address_id) 
+values 
     (1, 1, 1),  
     (2, 2, 2),  
     (3, 3, 3),  
@@ -77,8 +77,8 @@ VALUES
     (3, 23, 23), 
     (4, 24, 24); 
 
-INSERT INTO category (category_name) 
-VALUES 
+insert into category (category_name) 
+values 
     ('Ropa de Mujer'),
     ('Ropa de Hombre'),
     ('Ropa de Niños'),
@@ -95,8 +95,8 @@ VALUES
     ('Ropa de Baño'),
     ('Ropa Casual');
 
-INSERT INTO product (product_name, product_price, product_description, category_id) 
-VALUES 
+insert into product (product_name, product_price, product_description, category_id) 
+values 
     ('Vestido Floral', 1500, 'Vestido de verano con estampado floral', 1),
     ('Camisa a Cuadros', 800, 'Camisa de manga larga a cuadros', 2),
     ('Conjunto de Niños', 1200, 'Conjunto de pantalón y camiseta para niños', 3),
@@ -128,8 +128,8 @@ VALUES
     ('Bañador de Una Pieza', 1500, 'Bañador de una pieza para mujer', 14),
     ('Pantalón Cargo', 1100, 'Pantalón cargo cómodo y funcional para hombre', 15);
 
-INSERT INTO cart (user_id) 
-VALUES 
+insert into cart (user_id) 
+values 
     (1),
     (2),
     (3),
@@ -151,8 +151,8 @@ VALUES
     (19),
     (20);
 
-INSERT INTO cart_item (quantity, product_id, cart_id) 
-VALUES 
+insert into cart_item (quantity, product_id, cart_id) 
+values 
     (2, 1, 1),
     (1, 3, 1),
     (3, 5, 2),
@@ -194,8 +194,8 @@ VALUES
     (1, 17, 20),
     (3, 20, 20);
 
-INSERT INTO purchase (city, country, zipcode, state, street_name, street_number, user_id) 
-VALUES 
+insert into purchase (city, country, zipcode, state, street_name, street_number, user_id) 
+values 
     ('Buenos Aires', 'Argentina', 'C1064AAB', 'CABA', 'Avenida Corrientes', '1234', 1),
     ('Córdoba', 'Argentina', 'X5000', 'Córdoba', 'Avenida Vélez Sársfield', '567', 2),
     ('Rosario', 'Argentina', 'S2000', 'Santa Fe', 'Boulevard Oroño', '890', 3),
@@ -227,8 +227,8 @@ VALUES
     ('Neuquén', 'Argentina', 'Q8300', 'Neuquén', 'Calle Belgrano', '333', 9),
     ('Santa Rosa', 'Argentina', 'L6300', 'La Pampa', 'Avenida San Martín', '444', 10);
     
-INSERT INTO purchase_item (quantity, product_id, purchase_id) 
-VALUES 
+insert into purchase_item (quantity, product_id, purchase_id) 
+values 
     (2, 1, 1),
     (1, 3, 1),
     (3, 5, 2),
@@ -280,8 +280,8 @@ VALUES
     (2, 1, 29),
     (1, 3, 30);
  
-INSERT INTO review (review_rating, review_comment, user_id, product_id) 
-VALUES 
+insert into review (review_rating, review_comment, user_id, product_id) 
+values 
     (4.5, 'Excelente producto, muy buena calidad.', 1, 1),
     (3.8, 'Buena relación calidad-precio.', 2, 3),
     (5.0, '¡Increíble! Lo recomiendo completamente.', 3, 5),
@@ -293,8 +293,8 @@ VALUES
     (4.6, 'Muy buen servicio y entrega rápida.', 9, 23),
     (4.9, 'Producto de alta calidad, muy contento con la compra.', 10, 25);
     
-INSERT INTO favorite (product_id, user_id) 
-VALUES 
+insert into favorite (product_id, user_id) 
+values 
     (1, 1),
     (3, 2),
     (5, 3),
