@@ -88,7 +88,7 @@ begin
     where created_at between start_date and end_date;
 
     SELECT round(average_order_value / total_customers, 2) into average_order_value;
-END //
+end //
 
 delimiter ;
 
