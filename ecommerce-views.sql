@@ -93,6 +93,6 @@ group by
 
 -- select * from user_cart_view;
 -- select * from purchase_details_view;
--- select * from user_favorite_view;
+-- select * from user_favorite_view;user_purchase_history_view
 -- select * from product_review_view;
 -- select * from user_purchase_history_view;
