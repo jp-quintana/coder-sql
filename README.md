@@ -18,6 +18,15 @@ La organización del modelo planteado para la base de datos del ecommerce busca 
 La idea de la base de datos es poder utilizar la información recopilada para generar decisiones sobre que productos lanzar en el futuro, determinar estrategias de descuentos/publicidad, quitar productos si no tienen el suficiente desempeño, entre otras cosas.
 También se busca que la dirección de los usuarios sea de facil acceso para agilizar el proceso de finalizar compra.
 
+## Orden de instalación
+ En la carpeta scripts se encuentran los scripts de creación de cada objeto. Se deben correr en el siguiente orden:
+ 1. ecommerce-create
+ 2. ecommerce-population
+ 3. ecommerce-views
+ 4. ecommerce-functions
+ 5. ecommerce-sps
+ 6. ecommerce-triggers
+
 ## Diagrama Entidad Relación
 
 ### EER
